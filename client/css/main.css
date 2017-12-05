@@ -1,0 +1,371 @@
+﻿
+body {
+  background: white;
+}
+
+.spacer {
+  height: 80px;
+}
+
+.smallestSpacer {
+  height: 5px;
+}
+
+.smallerSpacer {
+  height: 50px;
+}
+
+.smallSpacer {
+  height: 20px;
+}
+
+.largeSpacer {
+  height: 160px;
+}
+
+.headingSpacer {
+  height: 20px;
+}
+
+.headingBottomSpacer {
+  height: 20px;
+}
+
+.footer {
+  background-color: whitesmoke;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.galleryImage {
+  max-height: 800px;
+}
+
+div.fullscreenBackground {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+div.homeBackground {
+    background: url(/client/images/StaticBackground.jpg) no-repeat left 10% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+div.productsBackground {
+    background: url(/client/images/ProductsBackground.png) no-repeat left 10% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+div.faqBackground {
+    background: url(/client/images/FaqBackground.jpg) no-repeat left 10% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+div.aboutUsBackground {
+    background: url(/client/images/StaticBackground.jpg) no-repeat left 10% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+div.mediaBackground {
+    background: url(/client/images/MediaBackground.jpg) no-repeat left 10% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+img.fullscreen {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: -1000;
+    overflow: hidden;
+    background-size: cover;
+}
+
+video.fullscreen {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: -900;
+    overflow: hidden;
+    background: black center 30% no-repeat;
+}
+
+.overlay-container {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    width: auto;
+    height: 100vh;
+    z-index: 0;
+}
+
+.heading-overlay {
+    position: absolute;
+    text-align: center;
+    bottom: 25%;
+    width: 100%;
+    color: white;
+}
+
+img.filmExploded {
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  img.filmExploded {
+    max-width: 320px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  img.filmExploded {
+    max-width: 320px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 730px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 986px;
+  }
+}
+
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* Mobile and tablet screens ----------- */
+@media only screen  and (max-device-width : 1024px) {
+  video.fullscreen {
+    display:none;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 282px;
+  }
+
+  img.filmExploded {
+    max-width: 480px;
+  }
+
+  .heading-overlay {
+      bottom: 10%;
+  }
+
+  .headingSpacer {
+    height: 10px;
+  }
+
+  .headingBottomSpacer {
+    height: 0px;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 442px;
+  }
+
+  img.filmExploded {
+    max-width: 320px;
+  }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 282px;
+  }
+
+  .heading-overlay {
+      bottom: 10%;
+  }
+
+  .headingSpacer {
+    height: 10px;
+  }
+
+  .headingBottomSpacer {
+    height: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 530px;
+  }
+
+  img.filmExploded {
+    max-width: 320px;
+  }
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 337px;
+  }
+
+  .heading-overlay {
+      bottom: 10%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 629px;
+  }
+
+  img.filmExploded {
+    max-width: 375px;
+  }
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 376px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  div.fullscreenBackground {
+      bottom: auto;
+      height: 698px;
+  }
+
+  img.filmExploded {
+    max-width: 414px;
+  }
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  img.filmExploded {
+    max-width: 320px;
+  }
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  img.filmExploded {
+    max-width: 320px;
+  }
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  img.filmExploded {
+    max-width: 360px;
+  }
+}

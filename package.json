@@ -1,0 +1,59 @@
+{
+  "name": "invisibleautodesign",
+  "version": "1.0.0",
+  "description": "the site",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssavelli/swiftsoftware.git"
+  },
+  "author": "Sean Savelli",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/ssavelli/swiftsoftware/issues"
+  },
+  "homepage": "https://github.com/ssavelli/swiftsoftware#readme",
+  "dependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "bootstrap": "^3.3.6",
+    "classnames": "^2.2.3",
+    "events": "^1.1.0",
+    "express": "^4.13.4",
+    "file-loader": "^0.8.5",
+    "flux": "^2.1.1",
+    "history": "^2.0.0",
+    "nodemon": "^1.9.1",
+    "object-assign": "^4.0.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-image-gallery": "^0.6.3",
+    "react-router": "^2.0.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "npm-run-all": "^1.5.1",
+    "style-loader": "^0.13.0"
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "scripts": {
+    "watch-client": "webpack --colors --watch",
+    "watch-server": "nodemon server/app.js",
+    "build": "webpack",
+    "start": "node server/app.js",
+    "devstart": "npm-run-all -p watch-server watch-client"
+  }
+}
